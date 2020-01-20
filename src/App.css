@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +34,55 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  font-family: sans-serif;
+}
+.incrementbutton {
+  background: red;
+}
+.decrementbutton {
+  background: yellow;
+}
+.numbertag {
+  color: blue;
+}
+.numbertag2 {
+  color: pink;
+}
+.textblue {
+  color: blueviolet;
+}
+.textblack {
+  color: black;
+}
+
+.Table
+    {
+        display: table;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
+    }

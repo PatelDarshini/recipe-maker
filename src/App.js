@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Counter from './Counter';
+import Table from "./Table";
 function App() {
+  const names = [{ name: "Sanket", age: 12 }, { name: "Darshini", age: 34 }];
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //     <div className="App">
+    //       <h1>Hello CodeSandbox</h1>
+    // -
+    //       {/* {timeline.map(time => {
+    //         return <Counter key={time} displayValue={time} />;
+    //       })} */}
+
+    //       <ul>
+    //         {names.map(nameObj=>{
+    //           return <li>{nameObj.name}={nameObj.age} </li>
+    //         })}
+    //         </ul>
+
+
+
+    //     </div>
+    <>
+      <Table />
+    </>
+
   );
 }
 
