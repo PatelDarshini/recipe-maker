@@ -5,3 +5,9 @@
 .evencolor{
     color: blue;
 }
+.rowSeletedcolor{
+    background-color: chocolate;
+}
+.rowNotSelectedcolor{
+   background-color: crimson;
+}

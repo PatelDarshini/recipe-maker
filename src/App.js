@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter from './Counter';
 import Table from "./Table";
+import Table2 from "./Table2";
 function App() {
   const names = [{ name: "Sanket", age: 12 }, { name: "Darshini", age: 34 }];
 
@@ -24,7 +25,8 @@ function App() {
 
     //     </div>
     <>
-      <Table />
+      {/* <Table /> */}
+      <Table2/>
     </>
 
   );

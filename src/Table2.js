@@ -3,7 +3,7 @@ import './table.css';
  import DisplayItem from "./DisplayItem";
 
 const foods = [{ iteamName: "Brinjal", category: "Lunch", description: "Birnjal with pototo" }, { iteamName: "Tindora", category: "Lunch", description: "tindora with pototo" }, { iteamName: "Papdi", category: "Lunch", description: "Papdi with tometo" }, { iteamName: "Mixveg", category: "Dinner", description: "Mixveg is the all time favriout" }, { iteamName: "Kapoourya", category: "Dinner", description: "Some people are dont like" }, { iteamName: "Handvo", category: "Dinner", description: "All member like this fooditeam" }];
-function Table() {
+function Table2() {
 
 
     const [foodToDisplay, setfoodToDisplay] = useState(foods);
@@ -30,19 +30,6 @@ function Table() {
      const display=foodObj;
      setDisplay(display);
  
-
-    }
-    //const selectedarray=[];
-    const [selectedArray,setSelectedArray] = useState([]);
-   function rowSelected(foodObj,index){
-       console.log(foodObj);
-       console.log(index);
-        const array = [...selectedArray];
-        array.push(index);
-        console.log(array);
-       setSelectedArray(array);
-    //    const selectedRowIndex=selectedarray.push(index);
-    //    return selectedRowIndex;
    }
     return (
         <div className="Table">
@@ -71,7 +58,7 @@ function Table() {
             </div>
 
             {foodToDisplay.map((foodObj,index) => {
-                return <div key={index} onClick={()=>rowSelected(foodObj,index)} className={selectedArray.includes(index) ?"Row rowSeletedcolor":"Row rowNotSelectedcolor"}> 
+                return <div key={index} className={foodObj.category === "Lunch" ?"Row oddcolor":"Row evencolor"} onClick={()=>displayRowClick(foodObj)}> 
                     <div className="Cell">
                      {foodObj.iteamName}
                     </div>
@@ -90,4 +77,4 @@ function Table() {
     );
 }
 
-export default Table;
+export default Table2;
