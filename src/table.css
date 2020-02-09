@@ -1,13 +1,42 @@
-.oddcolor{
-    color: red;
+.oddcolor {
+  color: red;
 }
 
-.evencolor{
-    color: blue;
+.evencolor {
+  color: blue;
 }
-.rowSeletedcolor{
-    background-color: chocolate;
+.rowSeletedcolor {
+  background-color: chocolate;
 }
-.rowNotSelectedcolor{
-   background-color: crimson;
+.rowNotSelectedcolor {
+  background-color: crimson;
+}
+.displayiteam {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px 20px 10px 20px;
+}
+.innerdiv {
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.d1 {
+}
+.d2 {
 }

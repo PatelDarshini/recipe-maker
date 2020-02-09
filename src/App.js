@@ -1,11 +1,14 @@
-import React from 'react';
-import './App.css';
-import Counter from './Counter';
+import React from "react";
+import "./App.css";
+import Counter from "./Counter";
 import Table from "./Table";
 import Table2 from "./Table2";
+import RecipeMaker from "./RecipeMaker";
 function App() {
-  const names = [{ name: "Sanket", age: 12 }, { name: "Darshini", age: 34 }];
-
+  const names = [
+    { name: "Sanket", age: 12 },
+    { name: "Darshini", age: 34 }
+  ];
 
   return (
     //     <div className="App">
@@ -21,14 +24,12 @@ function App() {
     //         })}
     //         </ul>
 
-
-
     //     </div>
     <>
-      {/* <Table /> */}
-      <Table2/>
+      {/* <Table />  */}
+      {/*<Table2 />*/}
+      {<RecipeMaker />}
     </>
-
   );
 }
 

@@ -1,13 +1,20 @@
 import React from "react";
-import './table.css'; 
-function DisplayItem(props){
+import "./table.css";
+function DisplayItem(props) {
+  const { item, shouldDisplayCategory = true } = props;
 
-    const {display}= props;
-
-
-    return (
-        <div className={display.category === "Lunch" ?"oddcolor":"evencolor"}>{display.iteamName}</div>
-    )
+  console.log(props);
+  return (
+    <div
+      className={
+        item.category === "Lunch" ? "oddcolor displayiteam" : "evencolor"
+      }
+    >
+      <div>{item.iteamName}</div>
+      {shouldDisplayCategory === true ? <div>{item.category}</div> : null}
+      <div>{item.description}</div>
+    </div>
+  );
 }
 
 export default DisplayItem;

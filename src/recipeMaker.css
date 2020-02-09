@@ -1,0 +1,40 @@
+.oilbutton {
+  background-color: blue;
+  height: 30px;
+  width: 90px;
+}
+.buttonMaster {
+  margin-right: 65px;
+  margin-left: 98px;
+  margin-top: 20px;
+}
+.waterbutton {
+  background-color: #a6e4f2;
+  margin-left: 10px;
+  height: 30px;
+  width: 90px;
+}
+.vegitablebutton {
+  background-color: coral;
+  margin-left: 10px;
+  height: 30px;
+  width: 90px;
+}
+.spicesbutton {
+  background-color: cornflowerblue;
+  margin-left: 10px;
+  height: 30px;
+  width: 90px;
+}
+.container {
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 400px;
+  margin-left: 95px;
+  margin-right: 30px;
+}
+.innerdiv {
+  width: 100%;
+}
