@@ -4,6 +4,7 @@ import Counter from "./Counter";
 import Table from "./Table";
 import Table2 from "./Table2";
 import RecipeMaker from "./RecipeMaker";
+import PostViewer from "./PostViewer";
 function App() {
   const names = [
     { name: "Sanket", age: 12 },
@@ -28,7 +29,8 @@ function App() {
     <>
       {/* <Table />  */}
       {/*<Table2 />*/}
-      {<RecipeMaker />}
+      <RecipeMaker />
+      {/* <PostViewer /> */}
     </>
   );
 }
