@@ -1,24 +1,24 @@
-.oddcolor {
+/* .oddcolor {
   color: red;
 }
 
 .evencolor {
   color: blue;
-}
+} */
 .rowSeletedcolor {
   background-color: chocolate;
 }
-.rowNotSelectedcolor {
-  background-color: crimson;
-}
-.displayiteam {
+/* .rowNotSelectedcolor {
+} */
+
+/* .displayiteam {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px 5px;
-}
+} */
 
-.container {
+/* .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
@@ -27,16 +27,20 @@
   border: 1px solid #ccc;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 10px 20px 10px 20px;
-}
-.innerdiv {
+} */
+/* .innerdiv {
   border: 3px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
+} */
+.resetbuttondiv {
+  margin-bottom: 10px;
+  text-align: center;
 }
-.d1 {
-}
-.d2 {
+.Table {
+  width: 33%;
+  margin: 0 auto;
 }

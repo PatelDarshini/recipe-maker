@@ -16,6 +16,8 @@ function RecipeMaker() {
   }
   return (
     <>
+      <h1 style={{ textAlign: "center" }}>Recipe Maker</h1>
+
       <div className="buttonMaster">
         <button
           type="button"

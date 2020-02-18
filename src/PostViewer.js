@@ -22,34 +22,43 @@ function PostViewer() {
   }
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "40% 60%" }}>
-      <div style={{ border: "2px black solid" }}>
-        {posts.length === 0 ? (
-          <div>Loading....</div>
-        ) : (
-          <ul>
-            {posts.map(post => {
-              return (
-                <li>
-                  <a href="#" onClick={() => loadPostData(post.id)}>
-                    {post.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
+    <>
+      <h1 style={{ textAlign: "center" }}>Post Viewer</h1>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "40% 60%",
+          width: "80%",
+          margin: " 0 auto"
+        }}
+      >
+        <div style={{ border: "2px black solid" }}>
+          {posts.length === 0 ? (
+            <div>Loading....</div>
+          ) : (
+            <ul>
+              {posts.map(post => {
+                return (
+                  <li>
+                    <a href="#" onClick={() => loadPostData(post.id)}>
+                      {post.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
 
-      <div style={{ border: "2px black solid" }}>
-        Individual Post Display
-        {selectedLoading === true ? (
-          <div>Loading....</div>
-        ) : (
-          selectedPost && <div>{selectedPost.body}</div>
-        )}
+        <div style={{ border: "2px black solid", padding: "16px" }}>
+          {selectedLoading === true ? (
+            <div>Loading....</div>
+          ) : (
+            selectedPost && <div>{selectedPost.body}</div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

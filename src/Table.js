@@ -17,17 +17,17 @@ const foods = [
   {
     iteamName: "Mixveg",
     category: "Dinner",
-    description: "Mixveg is the all time favriout"
+    description: "Mixveg is the all time favourite"
   },
   {
     iteamName: "Kapoourya",
     category: "Dinner",
-    description: "Some people are dont like"
+    description: "Some people dont like"
   },
   {
     iteamName: "Handvo",
     category: "Dinner",
-    description: "All member like this fooditeam"
+    description: "All member like this food iteam"
   }
 ];
 function Table() {
@@ -55,13 +55,14 @@ function Table() {
   return (
     <div className="Table">
       <div className="Title">
-        <p>This is a Table</p>
+        <h1 style={{ textAlign: "center" }}>Food Items</h1>
       </div>
-      <div>
+      <div className="resetbuttondiv">
         <button type="button" onClick={reset}>
-          Reset
+          <span role="img">🚫</span> Reset
         </button>
       </div>
+
       <div className="Heading">
         <div className="Cell">
           <p>IteamName</p>
