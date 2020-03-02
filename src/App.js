@@ -5,7 +5,10 @@ import Table from "./Table";
 import Table2 from "./Table2";
 import RecipeMaker from "./RecipeMaker";
 import PostViewer from "./PostViewer";
-import Form from "./Form";
+import Blog from "./Blog";
+import Routers from "./Route";
+import BlogList from "./BlogList";
+import CreateBlog from "./CreateBlog";
 function App() {
   const names = [
     { name: "Sanket", age: 12 },
@@ -32,7 +35,10 @@ function App() {
       {/*<Table2 />*/}
       {/* <RecipeMaker /> */}
       {/* <PostViewer /> */}
-      <Form />
+      {/* <Blog /> */}
+      <Routers />
+      {/* <BlogList /> */}
+      {/* <CreateBlog /> */}
     </>
   );
 }
